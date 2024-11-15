@@ -1,0 +1,128 @@
+
+
+### Introducción a Git y GitHub
+
+**Git** es un sistema de control de versiones distribuido que te permite rastrear cambios en el código fuente durante el desarrollo de software. **GitHub** es una plataforma basada en la web que utiliza Git para el control de versiones y facilita la colaboración.
+
+### Instalación
+
+1. **Instala Git**:
+   - **Windows**: Descarga e instala desde [git-scm.com](https://git-scm.com/).
+   - **macOS**: Usa Homebrew: `brew install git`.
+   - **Linux**: Usa el gestor de paquetes de tu distribución, por ejemplo, `sudo apt install git` en Ubuntu.
+
+2. **Configura Git**:
+   - Configura tu nombre de usuario y correo electrónico:
+
+     ```bash
+     
+     
+     ```
+
+### Comandos Básicos de Git
+
+1. **Inicializar un repositorio**:
+   - Crea un nuevo repositorio en un directorio:
+
+     ```bash
+     git init
+     ```
+
+2. **Agregar archivos**:
+   - Agrega archivos al área de preparación:
+
+     ```bash
+     git add archivo.txt
+     ```
+
+   - Agrega todos los archivos:
+
+     ```bash
+     git add .
+     ```
+
+3. **Hacer un commit**:
+   - Guarda los cambios en el repositorio:
+
+     ```bash
+     git commit -m "Mensaje del commit"
+     ```
+
+4. **Ver el estado del repositorio**:
+   - Muestra los cambios y el estado de los archivos:
+
+     ```bash
+     git status
+     ```
+
+5. **Ver el historial de commits**:
+   - Muestra el historial de commits:
+
+     ```bash
+     git log
+     ```
+
+### Trabajar con GitHub
+
+1. **Crear un repositorio en GitHub**:
+   - Inicia sesión en GitHub y haz clic en "New" para crear un nuevo repositorio.
+   - Ingresa un nombre y selecciona las opciones deseadas.
+
+2. **Conectar el repositorio local al remoto**:
+   - Agrega el remoto:
+
+     ```bash
+     git remote add origin https://github.com/TuUsuario/TuRepositorio.git
+     ```
+
+3. **Empujar cambios al repositorio remoto**:
+   - Sube tus cambios a GitHub:
+
+     ```bash
+     git push -u origin main
+     ```
+
+4. **Clonar un repositorio**:
+   - Clona un repositorio existente:
+
+     ```bash
+     git clone https://github.com/TuUsuario/TuRepositorio.git
+     ```
+
+### Ramas y Colaboración
+
+1. **Crear y cambiar de rama**:
+   - Crea una nueva rama:
+
+     ```bash
+     git branch nueva-rama
+     ```
+
+   - Cambia a la nueva rama:
+
+     ```bash
+     git checkout nueva-rama
+     ```
+
+2. **Fusionar ramas**:
+   - Fusiona una rama con `main`:
+
+     ```bash
+     git checkout main
+     git merge nueva-rama
+     ```
+
+3. **Resolver conflictos**:
+   - Edita los archivos en conflicto, luego:
+
+     ```bash
+     git add archivo-en-conflicto
+     git commit -m "Resuelto conflicto"
+     ```
+
+### Consejos Adicionales
+
+- **Usa `.gitignore`** para excluir archivos que no deseas rastrear.
+- **Revisa la documentación oficial de Git** para más detalles y comandos avanzados.
+
+Esta guía cubre los conceptos básicos para comenzar a usar Git y GitHub. A medida que te familiarices, podrás explorar características más avanzadas. ¡Buena suerte!
